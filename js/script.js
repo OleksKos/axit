@@ -51,4 +51,15 @@ Array.from(tabs).forEach(element => {
    })
 })
 
-
+const navLinks = document.querySelector('.main-nav');
+const links = document.querySelectorAll('.nav__links li');
+const body = document.querySelector('body');
+const headerBurger = document.querySelector('.header__burger');
+headerBurger.addEventListener('click', function () {
+   headerBurger.classList.toggle('active');
+   navLinks.classList.toggle('open');
+   links.forEach(link => {
+      link.classList.toggle('fade');
+   })
+   body.classList.toggle('lock');
+})
