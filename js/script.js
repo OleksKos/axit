@@ -41,6 +41,7 @@ Array.from(tabs).forEach(element => {
    })
 })
 
+const divBlock = document.querySelector('.div__lock');
 const navLinks = document.querySelector('.main-nav');
 const links = document.querySelectorAll('.main-nav__item');
 const body = document.querySelector('body');
@@ -52,4 +53,31 @@ headerBurger.addEventListener('click', function () {
       link.classList.toggle('fade');
    })
    body.classList.toggle('lock');
+   divBlock.classList.toggle('close__lock');
+})
+
+let startPosition = 0;
+let header = document.querySelector('.header');
+let scrolled;
+window.addEventListener('scroll', function () {
+   scrolled = this.pageYOffset;
+   if (scrolled > 80 && scrolled > startPosition) {
+      header.classList.add('out');
+   } else {
+      header.classList.remove('out');
+   }
+   startPosition = scrolled;
+})
+
+
+divBlock.addEventListener('click', function () {
+   headerBurger.classList.remove('active');
+   body.classList.remove('lock');
+   divBlock.classList.remove('close__lock');
+   navLinks.classList.remove('open');
+   links.forEach(link => {
+      link.classList.remove('fade');
+   })
+
+
 })
