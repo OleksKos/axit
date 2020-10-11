@@ -1,14 +1,4 @@
 const tabs = document.querySelectorAll('.tabs__link');
-
-// Array.from(tabs).forEach(item => {
-//    item.addEventListener('click', function () {
-//       item.classList.remove('active__tab');
-//    })
-//    item.addEventListener('click', function (e) {
-//       e.target.classList.add('active__tab');
-//    })
-// }
-// )
 let currentTab;
 const tabsBody = document.querySelectorAll('.tabs__section');
 
@@ -52,7 +42,7 @@ Array.from(tabs).forEach(element => {
 })
 
 const navLinks = document.querySelector('.main-nav');
-const links = document.querySelectorAll('.nav__links li');
+const links = document.querySelectorAll('.main-nav__item');
 const body = document.querySelector('body');
 const headerBurger = document.querySelector('.header__burger');
 headerBurger.addEventListener('click', function () {
