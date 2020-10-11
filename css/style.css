@@ -177,7 +177,7 @@ img {
     display: none;
     width: 100%;
     height: 72px;
-    background: #ffffff;
+    background: #030303;
 }
 
 .div__lock {
@@ -712,7 +712,14 @@ img {
     border-bottom:1px solid #c7c7c7;
 }
 
-.tabs__item:last-child {
+@media(max-width:500px){
+    .tabs__item {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.tabs__item:last-child{
     border-bottom:none;
 }
 
@@ -740,7 +747,7 @@ img {
     background-color: #ff8b38;
     width: 120px;
     text-align: center;
-    margin-bottom: 24px;
+    margin: 24px 0;
     color: #ffffff;
     border-radius: 2px;
 }
