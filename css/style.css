@@ -254,21 +254,21 @@ img {
     }
 
     .main-nav__item:nth-child(1){
-        transition: all 1.5s ease 0.5s;
+        transition: all 1.0s ease 1.0s;
     }
 
     .main-nav__item:nth-child(2){
-        transition: all 2.0s ease 1.0s;
+        transition: all 1.5s ease 1.5s;
     }
 
     .main-nav__item:nth-child(3){
-        transition: all 2.5s ease 1.3s;
+        transition: all 2.0s ease 2.0s;
     }
     .main-nav__item:nth-child(4){
-        transition: all 3.0s ease 1.6s;
+        transition: all 2.5s ease 2.5s;
     }
-    .main-nav__item li:nth-child(5){
-        transition: all 3.5s ease 1.9s;
+    .main-nav__item:nth-child(5){
+        transition: all 3.0s ease 3.0s;
     }
     
  
