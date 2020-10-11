@@ -172,6 +172,9 @@ img {
 .main__menu{
     background-color:rgb(0, 0, 0);
 }
+.header__section{
+    position: relative;
+}
 
 .head{
     display: none;
@@ -202,7 +205,6 @@ img {
     display: flex;
     align-items: center;
 }
-
 
 .main__menu {
     display: flex;
@@ -770,7 +772,7 @@ img {
 }
 
 .tab__image {
-    flex: 0 0 320px;
+    /*flex: 0 0 320px;*/
 }
 .tab__image img{
     max-width:320px;
