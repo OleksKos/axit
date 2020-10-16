@@ -81,3 +81,5 @@ divBlock.addEventListener('click', function () {
 
 
 })
+
+/*Slider*/

@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Axit Portfolio</title>
 </head>
 
-
 <body>
     <div class="div__lock"></div>
-    <section class="header__section">
+    <div class="header__section">
         <div class="head"></div>
         <header class="header">
             <div class="container main__menu">
@@ -29,22 +26,35 @@
                         </picture>
                     </a>
                 </div>
+                <div class="nav__phone">
+                    <img src="icons/input_phone.png" alt="Позвонить нам по телефону" width="30">
+                    <div class="tel">
+                        <span>
+                            <a href="tel:+12345573494" target="_blank" title="Call Us">
+                                +980(60)123-45-67
+                            </a>
+                        </span>
+                        <span>
+                            <i class="tel__p">(Telegram/Viber)</i>
+                        </span>
+                    </div>
+                </div>
                 <nav class="main-nav" aria-label="Main">
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">Features</a>
+                            <a href="#features" class="main-nav__link">Features</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">About</a>
+                            <a href="#about" class="main-nav__link">About</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">Pricing</a>
+                            <a href="#pricing" class="main-nav__link">Pricing</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">Reviews</a>
+                            <a href="#review" class="main-nav__link">Reviews</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">Contact</a>
+                            <a href="#contact" class="main-nav__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -66,13 +76,10 @@
                         </picture>
                     </div>
                     <h1 class="title main__title">
-                        MODERN AXURE TEMPLATE
-                        FOR BEAUTIFUL PROTOTYPES
+                        MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
                     </h1>
                     <p class="main__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                        euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-                        accumsan et viverra justo commodo.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                     </p>
                     <a href="#" class="main__button">
                         Download
@@ -85,12 +92,9 @@
                                 <p class="form__title-text">Try Your <span class="free">FREE</span> Trial Today</p>
                             </div>
                             <div class="input-group">
-                                <input type="text" id="myInput" required placeholder="Name"
-                                    class="input-group__input name__mod">
-                                <input type="text" id="myInput" placeholder="Email"
-                                    class="input-group__input email__mod">
-                                <input type="text" id="myInput" placeholder="Password"
-                                    class="input-group__input password__mod">
+                                <input type="text" id="myInput" required placeholder="Name" class="input-group__input name__mod">
+                                <input type="text" id="myInput" placeholder="Email" class="input-group__input email__mod">
+                                <input type="text" id="myInput" placeholder="Password" class="input-group__input password__mod">
                             </div>
                             <button class="form__button">Get Started</button>
                         </form>
@@ -99,14 +103,14 @@
             </div>
             <div class="main__mask"></div>
         </div>
-    </section>
+    </div>
     <section class="social__section">
+        <h2 class="visually__hidden">Social links</h2>
         <div class="container social__block">
             <div class="social__media">
                 <h2 class="social__title">Social Media</h2>
                 <p class="social__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean euismod bibendum laoreet.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                 </p>
             </div>
             <div class="social__icons">
@@ -121,60 +125,48 @@
         </div>
     </section>
     <section class="tab__section">
+        <h2 class="visually__hidden">Information</h2>
         <div class="container tab__block">
-
             <div class="tab__wrp">
                 <div class="tabs">
                     <ul class="tabs__list" role="tablist">
                         <li class="tabs__item" role="presentation">
-                            <div class="tabs__link active__tab" id="tab-A" role="tab" aria-controls="A"
-                                aria-selected="true" tabindex="0">TAB 1</div>
+                            <div class="tabs__link active__tab" id="tab-A" role="tab" aria-controls="A" aria-selected="true" tabindex="0">TAB 1</div>
                         </li>
                         <li class="tabs__item" role="presentation">
-                            <div class="tabs__link" id="tab-B" role="tab" aria-controls="B" aria-selected="false"
-                                tabindex="-1">TAB 2</div>
+                            <div class="tabs__link" id="tab-B" role="tab" aria-controls="B" aria-selected="false" tabindex="-1">TAB 2</div>
                         </li>
                         <li class="tabs__item" role="presentation">
-                            <div class="tabs__link" id="tab-C" role="tab" aria-controls="C" aria-selected="false"
-                                tabindex="-1">TAB 3</div>
+                            <div class="tabs__link" id="tab-C" role="tab" aria-controls="C" aria-selected="false" tabindex="-1">TAB 3</div>
                         </li>
                     </ul>
 
                     <section id="A" class="tabs__section" role="tabpanel" aria-labelledby="tab-A" aria-hidden="false">
                         <div class="tabs__body">
                             <h3>Tabs with soft transitioning effect.</h3>
-                            <p>1111Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-                                penatibus et magnis dis parturient montes.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                bibendum laoreet.</p>
+                            <p>1111Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus
+                                et magnis dis parturient montes.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                             <a href="#" class="tabs__button">Download</a>
                         </div>
                     </section>
 
-                    <section id="B" class="tabs__section hide" role="tabpanel" aria-labelledby="tab-B"
-                        aria-hidden="true">
+                    <section id="B" class="tabs__section hide" role="tabpanel" aria-labelledby="tab-B" aria-hidden="true">
                         <div class="tabs__body">
                             <h3>Tabs with soft transitioning effect.</h3>
-                            <p>2222Lorem ipsum dolor sit amet, consectetur adipiscing elit. us et magnis dis parturient
-                                montes.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                bibendum laoreet.</p>
+                            <p>2222Lorem ipsum dolor sit amet, consectetur adipiscing elit. us et magnis dis parturient montes.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                             <a href="#" class="tabs__button">Download</a>
                         </div>
                     </section>
 
-                    <section id="C" class="tabs__section hide" role="tabpanel" aria-labelledby="tab-C"
-                        aria-hidden="true">
+                    <section id="C" class="tabs__section hide" role="tabpanel" aria-labelledby="tab-C" aria-hidden="true">
                         <div class="tabs__body">
                             <h3>Tabs with soft transitioning effect.</h3>
-                            <p>333333Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-                                penatibus et magnis dis parturient montes.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                bibendum laoreet.</p>
+                            <p>333333Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus
+                                et magnis dis parturient montes.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                             <a href="#" class="tabs__button">Download</a>
                         </div>
                     </section>
@@ -190,7 +182,8 @@
             </div>
         </div>
     </section>
-    <section class="sub__section">
+    <section class="sub__section" id="features">
+        <h2 class="visually__hidden">Features</h2>
         <div class="container tab__block">
             <div class="sub__image">
                 <picture>
@@ -203,9 +196,7 @@
                 <h3 class="sub__title">
                     Sub list section
                 </h3>
-                <p class="sub__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                    bibendum laoreet. Proin gravida dolor sit amet lacus
-                    accumsan et viverra justo commodo.</p>
+                <p class="sub__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
                 <ul class="sub__list">
                     <li class="sub__item">
                         <div class="icons__wrp">
@@ -228,8 +219,7 @@
                         <div>
                             <h4 class="sub__title-mini">Title</h4>
                             <p class="section__text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Aenean euismod bibendum laoreet.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                             </p>
                         </div>
                     </li>
@@ -254,10 +244,7 @@
                         <div>
                             <h4 class="sub__title-mini">Title</h4>
                             <p class="section__text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.
-                                Aenean euismod bibendum laoreet.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                             </p>
                         </div>
                     </li>
@@ -266,18 +253,16 @@
         </div>
     </section>
     <section class="standart__section">
+        <h2 class="visually__hidden">Our Advantiges</h2>
         <div class="container tab__block">
             <div class="sub__block">
                 <h3 class="sub__title">
                     Standard Picture Section
                 </h3>
-                <p class="sub__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
-                    et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
-                    natoque penatibus et magnis dis parturient montes.</p>
+                <p class="sub__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
+                    montes.</p>
                 <p class="section__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                    bibendum laoreet.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                 </p>
             </div>
             <div class="standarg__image">
@@ -289,7 +274,8 @@
             </div>
         </div>
     </section>
-    <section class="process__section">
+    <section class="process__section" id="about">
+        <h2 class="visually__hidden">About Us</h2>
         <div class="container process__block">
             <h2 class="title process__title">
                 WHY THIS IS AWESOME
@@ -303,18 +289,14 @@
                         <img src="icons/bulb.jpg" alt="">
                     </div>
                     <h3 class="card__title">Thoughtful Design</h3>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Aenean euismod bibendum laoreet. Proin gravida
-                        dolor sit amet lacus accumsan et viverra.</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
                 </li>
                 <li class="process__card">
                     <div class="card__icons">
                         <img src="icons/keyboard.jpg" alt="">
                     </div>
                     <h3 class="card__title">Well Crafted</h3>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Aenean euismod bibendum laoreet. Proin gravida
-                        dolor sit amet lacus accumsan et viverra.</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
                 </li>
 
                 <li class="process__card">
@@ -322,14 +304,13 @@
                         <img src="icons/flash.jpg" alt="">
                     </div>
                     <h3 class="card__title">Easy to Customize</h3>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Aenean euismod bibendum laoreet. Proin gravida
-                        dolor sit amet lacus accumsan et viverra.</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="pricing__section">
+    <section class="pricing__section" id="pricing">
+        <h2 class="visually__hidden">Pricing</h2>
         <div class="container process__block">
             <h2 class=" title process__title">
                 PRICING OPTIONS
@@ -409,7 +390,8 @@
 
         </div>
     </section>
-    <section class="customer__section">
+    <section class="customer__section" id="review">
+        <h2 class="visually__hidden">Review</h2>
         <div class="container customer__block">
             <h2 class="title process__title">
                 WHAT OUR CUSTOMERS ARE SAYING
@@ -420,11 +402,8 @@
             <ul class="customer__list">
                 <li class="customer__item">
                     <div class="customer__review">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Doloribus
-                        accusamus expedita repellat similique
-                        odio aspernatur ex, architecto eaque
-                        quo suscipit.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                        <div class="trangel-top"></div>
                     </div>
                     <div class="customer">
                         <div class="customer__img">
@@ -438,11 +417,8 @@
                 </li>
                 <li class="customer__item">
                     <div class="customer__review">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Doloribus
-                        accusamus expedita repellat similique
-                        odio aspernatur ex, architecto eaque
-                        quo suscipit.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                        <div class="trangel-top"></div>
                     </div>
                     <div class="customer">
                         <div class="customer__img">
@@ -456,12 +432,10 @@
                 </li>
                 <li class="customer__item">
                     <div class="customer__review">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Doloribus
-                        accusamus expedita repellat similique
-                        odio aspernatur ex, architecto eaque
-                        quo suscipit.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                        <div class="trangel-top"></div>
                     </div>
+
                     <div class="customer">
                         <div class="customer__img">
                             <img src="img/avatar_2_u231.png" alt="">
@@ -477,6 +451,7 @@
 
     </section>
     <section class="stylish__section stylish">
+        <h2 class="visually__hidden">Stylish</h2>
         <div class="main__mask"></div>
         <div class="container stylysh__block">
             <h2 class="title stylish__title">
@@ -490,7 +465,8 @@
             </a>
         </div>
     </section>
-    <section class="second-form__section">
+    <section class="second-form__section" id="contact">
+        <h2 class="visually__hidden">Contacts</h2>
         <div class="container second-form__block">
             <h2 class="second-form__title">
                 CONTACT US
@@ -539,7 +515,8 @@
         </p>
 
     </footer>
-    <script src=js/script.js> </script>
+    <script src=js/script.js>
+    </script>
 </body>
 
 </html>
