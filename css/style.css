@@ -54,7 +54,6 @@
     font-display: swap;
 }
 
-
 /*Normalize*/
 
 * {
@@ -63,32 +62,23 @@
     border: 0px;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-:focus,
- :active {
+:focus, :active {
     outline: none;
 }
 
-a:focus,
-a:active {
+a:focus, a:active {
     outline: none;
 }
 
-aside,
-nav,
-footer,
-header,
-section {
+aside, nav, footer, header, section {
     display: block;
 }
 
-html,
-body {
+html, body {
     height: 100%;
     /*min-width: 1400px;*/
 }
@@ -100,9 +90,7 @@ body {
     font-family: 'opensans', sans-serif;
 }
 
-input,
-button,
-textarea {
+input, button, textarea {
     font-family: 'opensans', Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -119,8 +107,7 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-a,
-a:visited {
+a, a:visited {
     text-decoration: none;
 }
 
@@ -128,8 +115,7 @@ a:hover {
     text-decoration: underline;
 }
 
-ul,
-li {
+ul, li {
     list-style: none;
 }
 
@@ -417,8 +403,7 @@ img {
     transform: scale(0);
 }
 
-.header__burger::before,
-.header__burger::after {
+.header__burger::before, .header__burger::after {
     content: '';
     background-color: #fff;
     position: absolute;
@@ -434,6 +419,15 @@ img {
 
 .header__burger::after {
     bottom: 3px;
+}
+
+.title__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .main {
@@ -461,14 +455,43 @@ img {
 
 .main__block {
     flex-basis: 50%;
+    display: none;
 }
 
-.title__block {
+.main__block.current {
+    display: block;
+    animation: drop 1.5s ease;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.main__slider-button {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid yellowgreen;
+    color: #b8bec5;
+}
+
+.main__slider-btn {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    margin-bottom: -30px;
+    width: 150px;
 }
 
 @media(max-width:763px) {
@@ -1104,8 +1127,7 @@ img {
     /*border: 1px solid blue;*/
 }
 
-.pricing__item:first-child,
-.pricing__item:last-child {
+.pricing__item:first-child, .pricing__item:last-child {
     margin-top: 35px;
 }
 
@@ -1474,8 +1496,7 @@ img {
 }
 
 @media(max-width:1200px) {
-    .second-form__input input,
-    .second-form__input textarea {
+    .second-form__input input, .second-form__input textarea {
         width: 300px;
     }
 }

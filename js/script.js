@@ -83,3 +83,56 @@ divBlock.addEventListener('click', function () {
 })
 
 /*Slider*/
+let btnSlider = document.querySelectorAll('.main__slider-button');
+console.log(btnSlider);
+let currentBtn = 0;
+let sliderComponemt = document.querySelectorAll('.main__block');
+console.log(sliderComponemt);
+
+function initSlider(current) {
+   sliderComponemt.forEach((element) => {
+      element.classList.remove('current');
+   })
+   sliderComponemt[current].classList.add('current');
+
+}
+
+// btnSlider.forEach(element => {
+//    element.addEventListener('click', function (e) {
+//       current = e.target;
+//       console.log(current);
+//    })
+// })
+
+let newBtn = Array.from(btnSlider);
+for (let index = 0; index < newBtn.length; index++) {
+   const element = newBtn[index];
+
+   element.addEventListener('click', function () {
+      current = index;
+      console.log(current);
+      initSlider(current);
+   })
+}
+
+/*Background Slider 1st variant*/
+let i = 0;
+let time = 5000;
+let current = 0;
+
+function changeSlide() {
+   sliderComponemt.forEach((element) => {
+      element.classList.remove('current');
+   })
+   /*initSlider(current);*/
+   sliderComponemt[i].classList.add('current');
+   if (i < newBtn.length - 1) {
+      i++;
+   } else {
+      i = 0;
+   }
+   setTimeout('changeSlide()', time);
+}
+window.onload = changeSlide;
+
+
