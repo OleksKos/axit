@@ -10,6 +10,10 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400&display=swap"
         rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.svg">
+    <link rel="mask-icon" href="mask-icon.svg" color="#000000">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
     <title>Axit Portfolio</title>
 </head>
 
@@ -29,7 +33,9 @@
                     </a>
                 </div>
                 <div class="nav__phone">
-                    <img src="icons/input_phone.png" alt="Позвонить нам по телефону" width="30">
+                    <div>
+                        <img src="icons/input_phone.png" alt="Позвонить нам по телефону" width="30">
+                    </div>
                     <div class="tel">
                         <span>
                             <a href="tel:+12345573494" target="_blank" title="Call Us">
@@ -69,27 +75,6 @@
         </header>
         <div class="main">
             <div class="container title__block">
-
-                <!-- block -->
-                <div class="main__block current">
-                    <div class="main__logo">
-                        <picture>
-                            <source srcset="img/logo.webp" type="icons/webp">
-                            <source srcset="img/logo.png" type="icons/png">
-                            <img src="img/logo.png" alt="Logo" title="Our logo">
-                        </picture>
-                    </div>
-                    <h1 class="title main__title">
-                        MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
-                    </h1>
-                    <p class="main__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                        gravida dolor sit amet lacus accumsan et viverra justo commodo.
-                    </p>
-                    <a href="#" class="main__button">
-                        Download
-                    </a>
-                </div>
                 <div class="main__block">
                     <div class="main__logo">
                         <picture>
@@ -98,43 +83,51 @@
                             <img src="img/logo.png" alt="Logo" title="Our logo">
                         </picture>
                     </div>
-                    <h1 class="title main__title">
-                        Good hosting
-                    </h1>
-                    <p class="main__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                        gravida dolor sit amet lacus accumsan et viverra justo commodo.
-                    </p>
-                    <a href="#" class="main__button">
-                        Download
-                    </a>
-                </div>
-                <div class="main__block">
-                    <div class="main__logo">
-                        <picture>
-                            <source srcset="img/logo.webp" type="icons/webp">
-                            <source srcset="img/logo.png" type="icons/png">
-                            <img src="img/logo.png" alt="Logo" title="Our logo">
-                        </picture>
+                    <div class="main__anime current">
+                        <h1 class="title main__title">
+                            MODERN AXURE
+                        </h1>
+                        <p class="main__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                            accumsan et viverra justo commodo.
+                        </p>
+                        <a href="#" class="main__button">
+                            Download
+                        </a>
                     </div>
-                    <h1 class="title main__title">
-                        FAST Hosting
-                    </h1>
-                    <p class="main__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                        gravida dolor sit amet lacus accumsan et viverra justo commodo.
-                    </p>
-                    <a href="#" class="main__button">
-                        Download
-                    </a>
+                    <div class="main__anime">
+                        <h1 class="title main__title">
+                            Good Hosting
+                        </h1>
+                        <p class="main__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                            accumsan et viverra justo commodo.
+                        </p>
+                        <a href="#" class="main__button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="main__anime">
+                        <h1 class="title main__title">
+                            Fast Hosting
+                        </h1>
+                        <p class="main__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                            accumsan et viverra justo commodo.
+                        </p>
+                        <a href="#" class="main__button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="main__btn">
+                        <div class="main__btn-item current-color"></div>
+                        <div class="main__btn-item"></div>
+                        <div class="main__btn-item"></div>
+                    </div>
                 </div>
-                <!-- block -->
-                <div class="main__slider-btn">
-                    <button class="main__slider-button"></button>
-                    <button class="main__slider-button"></button>
-                    <button class="main__slider-button"></button>
-                </div>
-
                 <div class="main__form">
                     <div class="form__block">
                         <form action="#">
@@ -154,7 +147,6 @@
                     </div>
                 </div>
             </div>
-            <div class="main__mask"></div>
         </div>
     </div>
     <section class="social__section">
@@ -163,7 +155,8 @@
             <div class="social__media">
                 <h2 class="social__title">Social Media</h2>
                 <p class="social__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet.
                 </p>
             </div>
             <div class="social__icons">
@@ -200,12 +193,12 @@
                     <section id="A" class="tabs__section" role="tabpanel" aria-labelledby="tab-A" aria-hidden="false">
                         <div class="tabs__body">
                             <h3>Tabs with soft transitioning effect.</h3>
-                            <p>1111Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-                                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
-                                sodales pulvinar tempor. Cum sociis natoque penatibus
-                                et magnis dis parturient montes.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-                            </p>
+                            <p>1111Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                penatibus et magnis dis parturient montes.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet.</p>
                             <a href="#" class="tabs__button">Download</a>
                         </div>
                     </section>
@@ -215,10 +208,9 @@
                         <div class="tabs__body">
                             <h3>Tabs with soft transitioning effect.</h3>
                             <p>2222Lorem ipsum dolor sit amet, consectetur adipiscing elit. us et magnis dis parturient
-                                montes.
-                            </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-                            </p>
+                                montes.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet.</p>
                             <a href="#" class="tabs__button">Download</a>
                         </div>
                     </section>
@@ -227,12 +219,12 @@
                         aria-hidden="true">
                         <div class="tabs__body">
                             <h3>Tabs with soft transitioning effect.</h3>
-                            <p>333333Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-                                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
-                                sodales pulvinar tempor. Cum sociis natoque penatibus
-                                et magnis dis parturient montes.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-                            </p>
+                            <p>333333Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                penatibus et magnis dis parturient montes.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet.</p>
                             <a href="#" class="tabs__button">Download</a>
                         </div>
                     </section>
@@ -262,8 +254,9 @@
                 <h3 class="sub__title">
                     Sub list section
                 </h3>
-                <p class="sub__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-                    laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                <p class="sub__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet. Proin gravida dolor sit amet lacus
+                    accumsan et viverra justo commodo.</p>
                 <ul class="sub__list">
                     <li class="sub__item">
                         <div class="icons__wrp">
@@ -286,8 +279,8 @@
                         <div>
                             <h4 class="sub__title-mini">Title</h4>
                             <p class="section__text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-                                laoreet.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet.
                             </p>
                         </div>
                     </li>
@@ -312,9 +305,10 @@
                         <div>
                             <h4 class="sub__title-mini">Title</h4>
                             <p class="section__text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-                                laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                bibendum laoreet.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                                Aenean euismod bibendum laoreet.
                             </p>
                         </div>
                     </li>
@@ -329,13 +323,13 @@
                 <h3 class="sub__title">
                     Standard Picture Section
                 </h3>
-                <p class="sub__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-                    laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales
-                    pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
-                    montes.
-                </p>
+                <p class="sub__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+                    et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                    natoque penatibus et magnis dis parturient montes.</p>
                 <p class="section__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet.
                 </p>
             </div>
             <div class="standarg__image">
@@ -362,16 +356,18 @@
                         <img src="icons/bulb.jpg" alt="">
                     </div>
                     <h3 class="card__title">Thoughtful Design</h3>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
+                        dolor sit amet lacus accumsan et viverra.</p>
                 </li>
                 <li class="process__card">
                     <div class="card__icons">
                         <img src="icons/keyboard.jpg" alt="">
                     </div>
                     <h3 class="card__title">Well Crafted</h3>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
+                        dolor sit amet lacus accumsan et viverra.</p>
                 </li>
 
                 <li class="process__card">
@@ -379,8 +375,9 @@
                         <img src="icons/flash.jpg" alt="">
                     </div>
                     <h3 class="card__title">Easy to Customize</h3>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
+                        dolor sit amet lacus accumsan et viverra.</p>
                 </li>
             </ul>
         </div>
@@ -478,8 +475,11 @@
             <ul class="customer__list">
                 <li class="customer__item">
                     <div class="customer__review">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
-                            repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
                         <div class="trangel-top"></div>
                     </div>
                     <div class="customer">
@@ -494,8 +494,11 @@
                 </li>
                 <li class="customer__item">
                     <div class="customer__review">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
-                            repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
                         <div class="trangel-top"></div>
                     </div>
                     <div class="customer">
@@ -510,8 +513,11 @@
                 </li>
                 <li class="customer__item">
                     <div class="customer__review">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita
-                            repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
                         <div class="trangel-top"></div>
                     </div>
 
@@ -531,7 +537,6 @@
     </section>
     <section class="stylish__section stylish">
         <h2 class="visually__hidden">Stylish</h2>
-        <div class="main__mask"></div>
         <div class="container stylysh__block">
             <h2 class="title stylish__title">
                 STYLISH AXURE DESIGN
@@ -594,8 +599,4 @@
         </p>
 
     </footer>
-    <script src=js/script.js>
-    </script>
-</body>
-
-</html>
+    <script src=js/script.js> </script> </body> </html>
