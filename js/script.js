@@ -126,6 +126,7 @@ let changeSliderBtn = function (current) {
 let removeBtnBg = function () {
    sliderBtn.forEach(dot => {
       dot.classList.remove('current-color');
+      dot.classList.remove('main__btn-item:hover');
    })
 }
 
