@@ -666,7 +666,9 @@ img {
 .input-group__input {
     width: 284px;
     height: 35px;
-    box-shadow: 2px 2px 2px #a19f9f;
+    /* box-shadow: 2px 2px 2px #a19f9f; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     margin-bottom: 35px;
     padding: 10px 5px 7px 15px;
     font-size: 14px;
