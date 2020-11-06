@@ -293,8 +293,6 @@ window.onload = timeId;
 //New Slider
 
 
-
-
 let startPosition = 0;
 let header = document.querySelector('.header');
 let scrolled;
@@ -308,16 +306,3 @@ function scroll() {
    }
    startPosition = scrolled;
 }
-
-// let scrollSl = 0;
-// window.addEventListener('scroll', scrollSlider);
-// function scrollSlider() {
-//    scrollSl = this.pageYOffset;
-//    if (scrollSl > 300) {
-//       clearInterval(timeId);
-//    }
-//    if (scrollSl == 0) {
-//       clearInterval(timeId);
-//       timeId = setInterval(autoChangeSlide, time);
-//    }
-// }
