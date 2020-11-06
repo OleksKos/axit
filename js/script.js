@@ -2,15 +2,26 @@ const tabs = document.querySelectorAll('.tabs__link');
 let currentTab;
 const tabsBody = document.querySelectorAll('.tabs__section');
 
+function removeAtrr() {
+   Array.from(tabsBody).forEach(element => {
+      element.classList.remove('hide');
+   })
+}
+
 Array.from(tabs).forEach(element => {
    element.addEventListener('click', function (e) {
 
       Array.from(tabs).forEach(tab => {
          tab.classList.remove('active__tab');
       })
+      Array.from(tabsBody).forEach(tabsBody => {
+         tabsBody.classList.remove('show');
+      })
+      e.target.classList.remove('active__tab');
 
       e.target.classList.add('active__tab');
-      currentTab = e.target;
+      currentTab = e.target.closest('div');
+      currentTab.classList.add('active__tab');
       console.log(currentTab);
       let nameAtr = currentTab.getAttribute('id');
       // console.log(nameAtr);
@@ -88,7 +99,7 @@ let sliderItem = document.querySelectorAll('.main__anime');
 //Number of current slider
 let current = 0;
 //Time for delay
-let time = 4000;
+let time = 5000;
 //Function which set interval
 let timeId;
 //Buttons of slider
