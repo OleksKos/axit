@@ -267,12 +267,12 @@
                     <img src="img/tab.jpg" alt="Tabs" title="Tabs" class="Tabs">
                 </picture> -->
 
-                <picture>
-                    <!-- <source type="image/webp" srcset="img/tab_320x1.webp 1x, img/tab_320x2.webp 2x" sizes="390px"> -->
-                    <!-- <img src="img/tab_320.jpg" alt="Hosting" srcset="img/tab_320.jpg 1x, img/tab_1280x3.jpg 2x"
+                <!-- <picture> -->
+                <!-- <source type="image/webp" srcset="img/tab_320x1.webp 1x, img/tab_320x2.webp 2x" sizes="390px"> -->
+                <!-- <img src="img/tab_320.jpg" alt="Hosting" srcset="img/tab_320.jpg 1x, img/tab_1280x3.jpg 2x"
                         decoding="async" loading="lazy" sizes="640px">
                     <img src="img/tab_640.jpg" alt="Hosting"> -->
-                </picture>
+                <!-- </picture> -->
 
                 <picture>
                     <!--Descktop-->
@@ -282,13 +282,14 @@
                     img/server@1x.jpg 1x">
 
                     <!--Mobile-->
-                    <source type="image/webp" media="(min-width: 320px)" srcset="img/server@x2.webp 2x,
+                    <source type="image/webp" media="(min-width: 640px)" srcset="img/server@x2.webp 2x,
                     img/server@x1.webp 1x">
 
-                    <source media="(min-width: 320px)" srcset="img/server@x2.jpg 2x,
+                    <source media="(min-width: 640px)" srcset="img/server@x2.jpg 2x,
                     img/server@x1.jpg 1x">
 
-                    <img src="img/tab_320.jpg">
+                    <img src="img/server.jpg" sizes="640px">
+                </picture>
 
             </div>
         </div>
@@ -298,10 +299,18 @@
         <div class="container tab__block">
             <div class="sub__image">
                 <picture>
-                    <source srcset="img/image_left_sub_list_u2600.webp" type="icons/webp">
-                    <source srcset="img/image_left_sub_list_u2600.png" type="icons/png">
-                    <img src="img/image_left_sub_list_u2600.png" alt="">
+                    <source type="image/webp" srcset="img/cpanel/cpanel-360.webp 360w,
+                            img/cpanel/cpanel-720.webp 640w,
+                            img/cpanel/cpanel-1280.webp 1280w,
+                            img/cpanel/cpanel-1920.webp 1920w" sizes="500px" />
+                    <source srcset="img/cpanel/cpanel-360.jpg 360w,
+                    img/cpanel/cpanel-720.jpg  640w,
+                    img/cpanel/cpanel-1280.jpg 1280w,
+                    img/cpanel/cpanel-1920.jpg 1920w" sizes="500px" />
+                    <img src="img/cpanel/cpanel-720.jpg" alt="The Speed of Light and the Timing of Eclipses" />
                 </picture>
+
+
             </div>
             <div class="sub__block">
                 <h3 class="sub__title">
