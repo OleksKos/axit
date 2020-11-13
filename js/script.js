@@ -205,6 +205,7 @@ timeId = setInterval(autoChangeSlide, time);
 //Init slider
 window.onload = timeId;
 
+
 // //Start autoslider
 // let autoChangeSlide = function () {
 //    //Remove all bg color of slider's buttons
@@ -308,10 +309,9 @@ function scroll() {
 }
 
 
-
 'use strict';
 var multiItemSlider = (function () {
-   return function (selector) {
+   return function (selector, config) {
       var
          _mainElement = document.querySelector(selector), // основный элемент блока
          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
@@ -320,12 +320,12 @@ var multiItemSlider = (function () {
          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
-         _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+         _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента
          _positionLeftItem = 0, // позиция левого активного элемента
-         _transform = 0, // значение трансформации .slider_wrapper
+         _transform = 0, // значение транфсофрмации .slider_wrapper
          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
          _items = []; // массив элементов
-
+      var _startX = 0;
       // наполнение массива _items
       _sliderItems.forEach(function (item, index) {
          _items.push({ item: item, position: index, transform: 0 });
@@ -376,10 +376,25 @@ var multiItemSlider = (function () {
       };
 
       var _setUpListeners = function () {
-         // добавление к кнопкам "назад" и "вперед" обработчика _controlClick для события click
+         // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
          _sliderControls.forEach(function (item) {
             item.addEventListener('click', _controlClick);
          });
+
+         _mainElement.addEventListener('touchstart', function (e) {
+            _startX = e.changedTouches[0].clientX;
+         });
+         _mainElement.addEventListener('touchend', function (e) {
+            var
+               _endX = e.changedTouches[0].clientX,
+               _deltaX = _endX - _startX;
+            if (_deltaX > 50) {
+               _transformItem('left');
+            } else if (_deltaX < -50) {
+               _transformItem('right');
+            }
+         });
+
       }
 
       // инициализация
@@ -397,4 +412,4 @@ var multiItemSlider = (function () {
    }
 }());
 
-var slider = multiItemSlider('.slider')
+var slider = multiItemSlider('.slider');

@@ -1492,36 +1492,27 @@ img {
     }
 }
 
-/* СТИЛИ ДЛЯ КНОПОК "НАЗАД" И "ВПЕРЁД" */
-
 .slider__control {
     position: absolute;
-    display: none;
     top: 50%;
-    transform: translateY(-50%);
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     width: 40px;
-    /* ширина кнопки */
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
     height: 40px;
-    /* высота кнопки */
-    opacity: .3;
-    /* прозрачность */
-    background: #000;
-    /* цвет фона */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .3);
     border-radius: 50%;
 }
 
-.slider__control_show {
-    display: flex;
-}
-
 .slider__control:hover, .slider__control:focus {
+    color: #fff;
     text-decoration: none;
     outline: 0;
     opacity: .9;
-    /* прозрачность */
 }
 
 .slider__control_left {
@@ -1536,9 +1527,7 @@ img {
     content: '';
     display: inline-block;
     width: 20px;
-    /* ширина иконки (стрелочки) */
     height: 20px;
-    /* высота иконки (стрелочки) */
     background: transparent no-repeat center center;
     background-size: 100% 100%;
 }
